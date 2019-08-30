@@ -8,13 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>yile的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="m1=’hello’m2=’hello’result = m1==m2print(‘m1==m2:’,result)username= input(‘输入用户名:’)uname = ‘admin1’result=username != unameprint(‘用户名的验证结果是:’,result)  title: pythontags:    - python学习  python学习时间的表示">
+<meta property="og:type" content="article">
 <meta property="og:title" content="yile的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/06/python/index.html">
 <meta property="og:site_name" content="yile的博客">
+<meta property="og:description" content="m1=’hello’m2=’hello’result = m1==m2print(‘m1==m2:’,result)username= input(‘输入用户名:’)uname = ‘admin1’result=username != unameprint(‘用户名的验证结果是:’,result)  title: pythontags:    - python学习  python学习时间的表示">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-30T13:40:58.970Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="yile的博客">
+<meta name="twitter:description" content="m1=’hello’m2=’hello’result = m1==m2print(‘m1==m2:’,result)username= input(‘输入用户名:’)uname = ‘admin1’result=username != unameprint(‘用户名的验证结果是:’,result)  title: pythontags:    - python学习  python学习时间的表示">
   
     <link rel="alternative" href="/atom.xml" title="yile的博客" type="application/atom+xml">
   
@@ -150,9 +154,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-python" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
@@ -161,12 +163,552 @@
 <p>m1=’hello’<br>m2=’hello’<br>result = m1==m2<br>print(‘m1==m2:’,result)<br>username= input(‘输入用户名:’)<br>uname = ‘admin1’<br>result=username != uname<br>print(‘用户名的验证结果是:’,result) </p>
 <p>title: python<br>tags:<br>    - python学习</p>
 <hr>
-<h1 id="python学习"><a href="#python学习" class="headerlink" title="python学习"></a>python学习</h1><h2 id="时间的表示"><a href="#时间的表示" class="headerlink" title="时间的表示"></a>时间的表示</h2>
-        
-          <a class="article-more-a" href="/2019/08/06/python/#more">more >></a>
-        
+<h1 id="python学习"><a href="#python学习" class="headerlink" title="python学习"></a>python学习</h1><h2 id="时间的表示"><a href="#时间的表示" class="headerlink" title="时间的表示"></a>时间的表示</h2><a id="more"></a>
+
+<ol>
+<li><h3 id="计算机中的时间是从1970年1月1日-“00-00-00”开始-以毫秒（1-1000秒）进行计算。我们把1970年的这个时刻成为”unix时间点”。"><a href="#计算机中的时间是从1970年1月1日-“00-00-00”开始-以毫秒（1-1000秒）进行计算。我们把1970年的这个时刻成为”unix时间点”。" class="headerlink" title="计算机中的时间是从1970年1月1日    “00:00:00”开始,以毫秒（1/1000秒）进行计算。我们把1970年的这个时刻成为”unix时间点”。"></a>计算机中的时间是从1970年1月1日    “00:00:00”开始,以毫秒（1/1000秒）进行计算。我们把1970年的这个时刻成为”unix时间点”。</h3></li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">time.time()</span><br><span class="line"><span class="comment">#1970到目前的时间。.后是微秒。</span></span><br><span class="line">b =int(time.time())   <span class="comment">#保存秒数。</span></span><br><span class="line">b</span><br><span class="line">totalMinutes = b/<span class="number">60</span> <span class="comment">#分钟数</span></span><br><span class="line">totalMinutes</span><br><span class="line">totalMinutes = b//<span class="number">60</span> <span class="comment">#整数分钟数</span></span><br><span class="line">totalMinutes</span><br><span class="line">totalhours = totalMinutes = b//<span class="number">60</span> <span class="comment">#小时</span></span><br><span class="line">totalhours</span><br><span class="line">totalDays = totalhours = b//<span class="number">24</span> <span class="comment">#天数</span></span><br><span class="line">totalDays</span><br><span class="line">totalYears = totalDays//<span class="number">365</span> <span class="comment">#年份</span></span><br><span class="line">totalYears</span><br></pre></td></tr></table></figure>
+
+<h4 id="定义多点坐标"><a href="#定义多点坐标" class="headerlink" title="定义多点坐标"></a>定义多点坐标</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="comment">#定义多个点的坐标</span></span><br><span class="line">x1,y1 = <span class="number">100</span>,<span class="number">100</span></span><br><span class="line">x2,y2 = <span class="number">100</span>,<span class="number">-100</span></span><br><span class="line">x3,y3 =<span class="number">-100</span>,<span class="number">-100</span></span><br><span class="line">x4,y4 =<span class="number">-100</span>,<span class="number">100</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#绘制折线</span></span><br><span class="line">turtle.penup() <span class="comment">#抬笔</span></span><br><span class="line">turtle.goto(x1,y1)</span><br><span class="line">turtle.pendown() <span class="comment">#放笔</span></span><br><span class="line"></span><br><span class="line">turtle.goto(x2,y2)</span><br><span class="line">turtle.goto(x3,y3)</span><br><span class="line">turtle.goto(x4,y4)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#计算起始点和终点的距离</span></span><br><span class="line"></span><br><span class="line">distance = math.sqrt((x1-x4)**<span class="number">2</span> + (y1-y4)**<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">turtle.write(distance)</span><br></pre></td></tr></table></figure>
+
+<h2 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h2><ol>
+<li>“Ture” 和 “Fales” 本质是 1 和 0 </li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = Ture</span><br><span class="line">b =<span class="number">3</span></span><br><span class="line">a+b</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h4><p>== 等于</p>
+<p>！=不等于</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">1</span></span><br><span class="line">b =<span class="number">3</span></span><br><span class="line">a==b</span><br><span class="line">Fales</span><br><span class="line">a!=b</span><br><span class="line">Ture</span><br></pre></td></tr></table></figure>
+
+<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><table>
+<thead>
+<tr>
+<th>or :或</th>
+<th>x or y</th>
+<th>x为True，则返回ture，x为fales，则返回y。</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h4 id="变量-1"><a href="#变量-1" class="headerlink" title="变量"></a>变量</h4><p>python是面向对象，解释型和弱类型</p>
+<p>变量是容器中的物体，里面盛放的值随时可以改变</p>
+<p>比如：杯子中可放    白开水，牛奶。。。之类的不同液体。</p>
+<p>声明变量实际上就是给内存要空间。</p>
+<p>变量里可以存放的类型：字符串(“hallo world”),整型（5，9），浮点型（9.9）</p>
+<p>布尔类型：（True，Fales）</p>
+<p>列表list   字典dict   有序列表set</p>
+<p>变量是弱类型，根据赋值变换而变换</p>
+<p>变量的命名规则：由字母数字—— #下划线  ，不能以数字开头</p>
+<p>?                             严格区分大小写</p>
+<p>?                         不能使用python的关键字。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看python关键字</span></span><br><span class="line"><span class="keyword">import</span> keyword</span><br><span class="line">print(keyword.kwlist)</span><br><span class="line">[<span class="string">'False'</span>, <span class="string">'None'</span>, <span class="string">'True'</span>, <span class="string">'and'</span>, <span class="string">'as'</span>, <span class="string">'assert'</span>, <span class="string">'async'</span>, <span class="string">'await'</span>, <span class="string">'break'</span>, <span class="string">'class'</span>, <span class="string">'continue'</span>, <span class="string">'def'</span>, <span class="string">'del'</span>, <span class="string">'elif'</span>, <span class="string">'else'</span>, <span class="string">'except'</span>, <span class="string">'finally'</span>, <span class="string">'for'</span>, <span class="string">'from'</span>, <span class="string">'global'</span>, <span class="string">'if'</span>, <span class="string">'import'</span>, <span class="string">'in'</span>, <span class="string">'is'</span>, <span class="string">'lambda'</span>, <span class="string">'nonlocal'</span>, <span class="string">'not'</span>, <span class="string">'or'</span>, <span class="string">'pass'</span>, <span class="string">'raise'</span>, <span class="string">'return'</span>, <span class="string">'try'</span>, <span class="string">'while'</span>, <span class="string">'with'</span>, <span class="string">'yield'</span>]</span><br></pre></td></tr></table></figure>
+
+<h4 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h4><p>固定的值    ，值是不可以改变的。</p>
+<h2 id="print的使用（字符串的使用）"><a href="#print的使用（字符串的使用）" class="headerlink" title="print的使用（字符串的使用）"></a>print的使用（字符串的使用）</h2><p>print():内置函数</p>
+<p>sep默认的分割是空格</p>
+<h4 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h4><p>\n是转义字符……..即是换行</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'hello\nkitty'</span>)</span><br><span class="line">hello</span><br><span class="line">kitty</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>\t制表符</p>
+</li>
+<li><p>\’     #单引号配单引号需要转义字符。 ‘   ‘ ‘   ‘</p>
+</li>
+<li><p>&quot;     #双引号配双引号同要转义字符。 “   “”   “     </p>
+</li>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'大大说：\'想吃饭。\''</span>)           <span class="comment">#'  ''   '         </span></span><br><span class="line">大大说：<span class="string">'想吃饭'</span>                     <span class="comment">#  #单引号配单引号需要转义字符。 '   ''   '</span></span><br><span class="line">print(<span class="string">"哈哈说：\"是的。\""</span>)          <span class="comment"># "   ""   "             </span></span><br><span class="line">哈哈说：<span class="string">"是的。"</span>                      <span class="comment">#双引号配双引号同要转义字符。 "   ""   "</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"数式说：'要飞行！'"</span>)              <span class="comment">#"   ''   "   双引号套单引号。</span></span><br><span class="line">数式说：<span class="string">'要飞行！'</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'QQ说：“想睡觉@”'</span>)            <span class="comment">#'  ""  '      单引号套双引号。</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><p>字符串表示：  ‘’      “ “     ‘’’</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">message = <span class="string">'[淘宝] 你用xxxxx，\n验证码是：333， \n涉及个人隐私'</span>     <span class="comment">#'              '</span></span><br><span class="line"> print(message)</span><br><span class="line">[淘宝] 你用xxxxx，</span><br><span class="line">验证码是：<span class="number">333</span>， </span><br><span class="line">涉及个人隐私</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">message1 = <span class="string">'''                        #'''</span></span><br><span class="line">[我是包子]</span><br><span class="line">验证码是<span class="number">9527</span></span><br><span class="line">忽念                   </span><br><span class="line"><span class="string">'''                                #'''</span></span><br><span class="line">print(message1)</span><br><span class="line">[我是包子]</span><br><span class="line">验证码是<span class="number">9527</span></span><br><span class="line">忽念</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#邮箱格式输出</span></span><br><span class="line">email_message = <span class="string">'''</span></span><br><span class="line"><span class="string">亲爱的某某某：</span></span><br><span class="line"><span class="string">            你注册的中国银行用户为充钱，请点击下方链接</span></span><br><span class="line"><span class="string">            请点击：激活用户</span></span><br><span class="line"><span class="string">            激活用户后就可以使用银行卡。</span></span><br><span class="line"><span class="string">  from:  China bank</span></span><br><span class="line"><span class="string">  date:9102/8/10</span></span><br><span class="line"><span class="string">  '''</span></span><br><span class="line">print(email_message)</span><br><span class="line">亲爱的某某某：</span><br><span class="line">            你注册的中国银行用户为充钱，请点击下方链接</span><br><span class="line">            请点击：激活用户</span><br><span class="line">            激活用户后就可以使用银行卡。</span><br><span class="line">  <span class="keyword">from</span>:  China bank</span><br><span class="line">  date:<span class="number">9102</span>/<span class="number">8</span>/<span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+<p>#单行注释，增加可读性。python解释器跳过。</p>
+<p>多行注释:’’’</p>
+<p>?              ‘’’</p>
+<p>三引号作用：</p>
+<ol>
+<li>保留格式的字符串使用</li>
+<li>作为注释。         </li>
+</ol>
+<h4 id="格式化输出"><a href="#格式化输出" class="headerlink" title="格式化输出"></a>格式化输出</h4><p>#格式化输出: %S     %d     %f</p>
+<ol>
+<li>占位符格式</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#普通</span></span><br><span class="line">person =(<span class="string">'某人'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>address =(<span class="string">'广州'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>phone=(<span class="string">'123213'</span>)</span><br><span class="line"> print(<span class="string">'收件人:'</span>+person+<span class="string">'收获地址是：'</span>+address+<span class="string">'联系方式：'</span>+phone+<span class="string">''</span>)</span><br><span class="line">收件人是:某人 收获地址是：广州 联系方式：<span class="number">123213</span></span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"><span class="comment">#格式化输出</span></span><br><span class="line">person =(<span class="string">'某人'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>address =(<span class="string">'广州'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>phone=(<span class="string">'123213'</span>)</span><br><span class="line">print(<span class="string">'收件人:%s,收货地址:%s,商品电话是:%s'</span> % (person,address,phone))</span><br><span class="line">收件人:某人,收货地址:广州,商品电话是:<span class="number">123213</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">age=<span class="number">18</span></span><br><span class="line"><span class="comment"># str（int） ---&gt; (int -&gt;str)   强制类型的转换</span></span><br><span class="line"><span class="keyword">print</span>（<span class="string">'年龄是：'</span>str（age））  <span class="comment"># 'aaa'   int ---&gt;str;</span></span><br><span class="line">年龄是：<span class="number">18</span></span><br><span class="line"><span class="keyword">print</span>（<span class="string">'年龄是：%s'</span> % age）  <span class="comment"># %s -- &gt; str 简写</span></span><br><span class="line">年龄是：<span class="number">18</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">name=胡</span><br><span class="line"><span class="keyword">print</span>（<span class="string">'姓名是'</span>+name）</span><br><span class="line">姓名是：胡</span><br><span class="line"></span><br><span class="line">ismarry=<span class="literal">False</span> <span class="comment">#布尔： True， False</span></span><br><span class="line">str（age）</span><br><span class="line"><span class="string">'14'</span>   <span class="comment">#str 赋值 默认具有引号  %s = str</span></span><br><span class="line"> <span class="comment">#%d   digit 数字 </span></span><br><span class="line"> age=<span class="number">122.5</span>  </span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'年龄是:%d'</span> % age) <span class="comment">#int(18.5)---&gt;18  取整数</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>year=<span class="number">221</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'今年是:%d'</span> % year)</span><br><span class="line">今年是:<span class="number">221</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>year=<span class="number">2112</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'年龄是:%2d'</span> % year)</span><br><span class="line">年龄是:<span class="number">2112</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">#%f     小数点后面的位数，且是四舍五入</span></span><br><span class="line">salart=<span class="number">5556.4443</span>    <span class="comment">#%.1f：小数点后一位</span></span><br><span class="line">print(<span class="string">'我的薪水是：%.1f'</span> %salary)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> movie=<span class="string">'ss'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>ticket =<span class="number">22.2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>count= <span class="number">34</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>total = ticket*count</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'电影:%s'</span> % movie)</span><br><span class="line">电影:ss</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'人数: %d'</span> % count)</span><br><span class="line">人数: <span class="number">34</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'单价:%f'</span> % ticket)</span><br><span class="line">单价:<span class="number">22.200000</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'总票价:%.1f'</span> % total)</span><br><span class="line">总票价:<span class="number">754.8</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>2.format      #format是一个字符串中的函数  ‘’. format()   此处的   ‘ , ‘  调用  [ ]   { }    ()</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> age=<span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>s=<span class="string">'已经上'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'牵制说:我今年&#123;&#125;岁了,&#123;&#125;幼儿园！'</span>.format(age,s)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(message)</span><br><span class="line">牵制说:我今年<span class="number">2</span>岁了,已经上幼儿园！</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>name= <span class="string">'固体'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>age=<span class="number">23</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hobby = <span class="string">'宅'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>money=<span class="number">211.22</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>message= <span class="string">'&#123;&#125;今年&#123;&#125;岁，最喜欢&#123;&#125;，有现金：&#123;&#125;'</span>.format(name,age,hobby,money)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(message)</span><br><span class="line">固体今年<span class="number">23</span>岁，最喜欢宅，有现金：<span class="number">211.22</span></span><br><span class="line"><span class="comment"># format函数要一一对应</span></span><br></pre></td></tr></table></figure>
+
+<p>解释器:</p>
+<p>input(prompt=None) —-&gt;标准的输入流（键盘）</p>
+<p>input（）   </p>
+<p>阻塞     admin+ 回车 ——-&gt;name ‘容器’接收流中的信息</p>
+<p>input（’提示信息：’）</p>
+<p>age = input（‘请输入年龄：’</p>
+<p>name = input（‘请输入姓名：’）</p>
+<p>print（name，age）   —–》输出到显示器</p>
+<p>捕鱼达人游戏</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'''</span></span><br><span class="line"><span class="string">*****************</span></span><br><span class="line"><span class="string">    捕鱼达人</span></span><br><span class="line"><span class="string">*****************</span></span><br><span class="line"><span class="string">'''</span>)</span><br><span class="line">username = input(<span class="string">'输入参与游戏者用户名:'</span>)</span><br><span class="line">password = input(<span class="string">'输入密码:'</span>)</span><br><span class="line">print(<span class="string">'%s请充值才能加入游戏！'</span>% username)</span><br><span class="line">coins = input(<span class="string">'请充值:'</span>)   <span class="comment"># input键盘输入的都是字符串类型，即使输入500，他也会添加'500'</span></span><br><span class="line">coins = int(coins)</span><br><span class="line">print(<span class="string">'%s充值成功！当前游戏币是:%d'</span> %(username,coins))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">*****************</span><br><span class="line">    捕鱼达人</span><br><span class="line">*****************</span><br><span class="line"></span><br><span class="line">输入参与游戏者用户名:yile</span><br><span class="line">输入密码:<span class="number">123</span></span><br><span class="line">yile请充值才能加入游戏！</span><br><span class="line">请充值:<span class="number">500</span></span><br><span class="line">yile充值成功！当前游戏币是:<span class="number">500</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'''</span></span><br><span class="line"><span class="string">***************</span></span><br><span class="line"><span class="string">    英雄联盟</span></span><br><span class="line"><span class="string">***************</span></span><br><span class="line"><span class="string">'''</span>)</span><br><span class="line">role = input(<span class="string">'请输入英雄的名字:'</span>)</span><br><span class="line">equipment = input(<span class="string">'输入拥有的装备:'</span>)</span><br><span class="line">upgrade_equipment = input(<span class="string">'输入想购买的装备:'</span>)</span><br><span class="line">pay = input(<span class="string">'输入付款金额:'</span>)</span><br><span class="line">print(<span class="string">'&#123;&#125;拥有&#123;&#125;装备，购买此装备花了&#123;&#125;钱'</span>.format(role,equipment,pay))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">***************</span><br><span class="line">    英雄联盟</span><br><span class="line">***************</span><br><span class="line"></span><br><span class="line">请输入英雄的名字:盖伦</span><br><span class="line">输入拥有的装备:短刀</span><br><span class="line">输入想购买的装备:刀</span><br><span class="line">输入付款金额:<span class="number">12334</span></span><br><span class="line">盖伦拥有短刀装备，购买此装备花了<span class="number">12334</span>钱</span><br></pre></td></tr></table></figure>
+
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="运算符种类"><a href="#运算符种类" class="headerlink" title="运算符种类"></a>运算符种类</h3><ol>
+<li>赋值运算符</li>
+<li>算术运算符</li>
+<li>关系运算符</li>
+<li>逻辑运算符</li>
+<li>位运算符</li>
+</ol>
+<h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><p>赋值即是内存的改变</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">'admin'</span></span><br><span class="line">name1 = name</span><br><span class="line">print(id(name),name)</span><br><span class="line"></span><br><span class="line">  <span class="number">55130272</span> admin  <span class="comment">#地址</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#扩展后的赋值符号   +=   -=   *=   /= ....</span></span><br><span class="line">num = <span class="number">8</span></span><br><span class="line">num += <span class="number">5</span>     <span class="comment">#nmu = nmu+5  此时的+是加法</span></span><br><span class="line">print(num)</span><br><span class="line"><span class="number">13</span></span><br><span class="line"></span><br><span class="line">a = <span class="string">'abc'</span></span><br><span class="line">a += <span class="string">'ff'</span>   <span class="comment"># a = a+'ff'  （此时的'+'是连接符）</span></span><br><span class="line"><span class="keyword">print</span>（a）</span><br><span class="line">abcff</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#     -=    *=   /=只是可以应用在数值，字符串不支持。</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="算数连接符"><a href="#算数连接符" class="headerlink" title="算数连接符"></a>算数连接符</h3><p>扩展的算术运算符： **  //   %</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">a =<span class="number">8</span></span><br><span class="line">b =<span class="number">3</span></span><br><span class="line">result= a*b</span><br><span class="line">print(<span class="string">'乘法运算:'</span>,result)</span><br><span class="line">乘法运算: <span class="number">24</span></span><br><span class="line">    </span><br><span class="line">a=<span class="number">8</span></span><br><span class="line">b=<span class="number">3</span></span><br><span class="line">result =a/b</span><br><span class="line">print(<span class="string">'除法运算:'</span>,result)</span><br><span class="line">除法运算: <span class="number">2.6666666666666665</span></span><br><span class="line"></span><br><span class="line">a=<span class="number">8</span></span><br><span class="line">b=<span class="number">3</span></span><br><span class="line">result = a**b   <span class="comment">#b=2  8*8=64 b=3   8*8*8=512</span></span><br><span class="line">print(result)</span><br><span class="line"><span class="number">512</span></span><br><span class="line"></span><br><span class="line">a =<span class="number">9</span></span><br><span class="line">b=<span class="number">2</span></span><br><span class="line">result = a//b</span><br><span class="line">print(<span class="string">'除法运算:'</span>,result)</span><br><span class="line">除法运算: <span class="number">4</span>    <span class="comment">#整除   9/2 =4.5 取整：4</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">a=<span class="number">9</span></span><br><span class="line">b=<span class="number">4</span></span><br><span class="line">result = a%b</span><br><span class="line">print(<span class="string">'取余数运算:'</span>,result)</span><br><span class="line">取余数运算: <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h3><p>类型：等于（==），不等于（！=），小于等于（&lt;=）,大于等于（&gt;=）,小于（&lt;）,大于（&gt;)，is 用户对象的比较 ，is not</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">age =<span class="number">20</span>  <span class="comment">#源文件</span></span><br><span class="line">age1=<span class="number">20</span></span><br><span class="line">print(id(age))</span><br><span class="line">print(id(age1))</span><br><span class="line">print(age <span class="keyword">is</span> age1)</span><br><span class="line">money =<span class="number">23333</span></span><br><span class="line">salary =<span class="number">23333</span></span><br><span class="line">print(id(money))</span><br><span class="line">print(id(salary))</span><br><span class="line">print(money <span class="keyword">is</span> salary)</span><br><span class="line"></span><br><span class="line"><span class="number">1516463584</span></span><br><span class="line"><span class="number">1516463584</span></span><br><span class="line"><span class="literal">True</span></span><br><span class="line"><span class="number">60125712</span></span><br><span class="line"><span class="number">60125712</span></span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">n1 = int(input(<span class="string">'请输入第一个数：'</span>))   <span class="comment">#int 整型</span></span><br><span class="line">n2 = int(input(<span class="string">'请输入第二个数：'</span>))</span><br><span class="line">result = n1&gt; n2</span><br><span class="line">print(<span class="string">'n1&gt;n2:'</span>,result)</span><br><span class="line"><span class="comment">#比较n1与n2的大小</span></span><br><span class="line">请输入第一个数：<span class="number">2</span></span><br><span class="line">请输入第二个数：<span class="number">3</span></span><br><span class="line">n1&gt;n2: <span class="literal">False</span></span><br><span class="line">请输入第一个数：<span class="number">2</span></span><br><span class="line">请输入第二个数：<span class="number">1</span></span><br><span class="line">n1&gt;n2: <span class="literal">True</span>  <span class="comment">#地址一致</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">m1=<span class="string">'hello'</span></span><br><span class="line">m2=<span class="string">'hello'</span></span><br><span class="line">result = m1==m2</span><br><span class="line">print(<span class="string">'m1==m2:'</span>,result)</span><br><span class="line">username= input(<span class="string">'输入用户名:'</span>)</span><br><span class="line">uname = <span class="string">'admin1'</span></span><br><span class="line">result=username != uname</span><br><span class="line">print(<span class="string">'用户名的验证结果是:'</span>,result)</span><br><span class="line"></span><br><span class="line">m1==m2: <span class="literal">True</span></span><br><span class="line">输入用户名:ww </span><br><span class="line">用户名的验证结果是: <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>逻辑语：</p>
+<ul>
+<li>and      or       not</li>
+<li>and       逻辑与</li>
+<li>or         逻辑或</li>
+<li>not       逻辑非</li>
+<li>逻辑运算符的运算结果也是返回True    False</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>‘’’</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>左</td>
+<td></td>
+<td>右</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>True</td>
+<td>and</td>
+<td>True</td>
+<td>—–&gt;Ture</td>
+<td></td>
+</tr>
+<tr>
+<td>True</td>
+<td>and</td>
+<td>False</td>
+<td>—–&gt;Fales</td>
+<td></td>
+</tr>
+<tr>
+<td>True</td>
+<td>and</td>
+<td>False</td>
+<td>—–&gt;Fales</td>
+<td></td>
+</tr>
+<tr>
+<td>False</td>
+<td>and</td>
+<td>False</td>
+<td>—–&gt;Fales</td>
+<td></td>
+</tr>
+<tr>
+<td>8&gt;10</td>
+<td>and</td>
+<td>6&lt;8</td>
+<td>—–&gt;Fales</td>
+<td></td>
+</tr>
+<tr>
+<td>False</td>
+<td>and</td>
+<td>True</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>‘admin’==’admin123’</td>
+<td>and</td>
+<td>‘123456’==’’123456</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>False</td>
+<td></td>
+<td>True</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>‘’’</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">n1 =<span class="number">8</span></span><br><span class="line">n2 =<span class="number">5</span></span><br><span class="line">n3 =<span class="number">3</span></span><br><span class="line">result = n1&gt;=(n2+n3)<span class="keyword">and</span> n1&gt;n2</span><br><span class="line">         <span class="number">8</span>&gt;<span class="number">8</span> <span class="keyword">and</span> <span class="number">8</span>&gt;<span class="number">4</span>    <span class="literal">True</span></span><br><span class="line"></span><br><span class="line">n2=n2+n3</span><br><span class="line"><span class="comment">#n2---&gt;8</span></span><br><span class="line">result =n1&gt;=n2 <span class="keyword">and</span> n1&lt;n2</span><br><span class="line">        <span class="number">8</span>&gt;=<span class="number">8</span>   <span class="keyword">and</span> <span class="number">8</span>&lt;<span class="number">8</span>   <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">n4 =(n1+n3)-n2   <span class="comment">#n4 =3</span></span><br><span class="line">result =n4&lt;n1 <span class="keyword">and</span> (n4+n3)&gt;n2  <span class="comment">#False</span></span><br><span class="line">        <span class="number">3</span>&lt;<span class="number">8</span>   <span class="keyword">and</span>  <span class="number">6</span>&gt;<span class="number">8</span>    <span class="literal">False</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">or:或者</span></span><br><span class="line"><span class="string">手机号 或者 账户名</span></span><br><span class="line"><span class="string">只要有一边为真，结果即为真True</span></span><br><span class="line"><span class="string">True   or   True  -----&gt;True</span></span><br><span class="line"><span class="string">True   or   Fales -----&gt;True</span></span><br><span class="line"><span class="string">False  or   Fales -----&gt;Fales</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#判断是否存在用户</span></span><br><span class="line">uesrname = <span class="string">''</span></span><br><span class="line">email =<span class="string">'1305891514@qq.com'</span></span><br><span class="line">result =username==<span class="string">'admin123'</span> <span class="keyword">or</span> email ==<span class="string">'1305891514@qq.com'</span> </span><br><span class="line">    <span class="comment">#Fales          and                     True   ----&gt;True</span></span><br><span class="line">    <span class="comment">#有误            NameError: name 'username' is not defined</span></span><br><span class="line">print(<span class="string">'or ---&gt;'</span>,result)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">a=<span class="number">2</span></span><br><span class="line">b=<span class="number">5</span></span><br><span class="line">c=<span class="number">7</span></span><br><span class="line">result =(a+b)!=c <span class="keyword">or</span> c&gt;a</span><br><span class="line">print(<span class="string">'or ----&gt;:'</span>,result)</span><br><span class="line">flag = Fales</span><br><span class="line">result =<span class="keyword">not</span> flag <span class="comment">#nou就是取反</span></span><br><span class="line">print(<span class="string">'not ----&gt;:'</span>,result)</span><br><span class="line"><span class="literal">True</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h3><p> ‘’’  </p>
+<table>
+<thead>
+<tr>
+<th>&amp;  与</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>|    或</td>
+</tr>
+<tr>
+<td>~    非  （取反）   将十进制的数字对应的二进制惊醒取反操作</td>
+</tr>
+<tr>
+<td>^   异或    相同的是0，不同的是1</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+</tr>
+<tr>
+<td>‘’’</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>print(3 &amp; 2)</th>
+<th>print(5|3)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>‘’’ &amp;类似and</td>
+<td>print(~5) # 取反</td>
+</tr>
+<tr>
+<td>1True   0  false</td>
+<td>‘’’</td>
+</tr>
+<tr>
+<td>0000  0011</td>
+<td>0000 010</td>
+</tr>
+<tr>
+<td>&amp;0000 0010</td>
+<td>取反：</td>
+</tr>
+<tr>
+<td>—————–</td>
+<td>1111 1010</td>
+</tr>
+<tr>
+<td>0000  0010</td>
+<td>- 6：</td>
+</tr>
+<tr>
+<td></td>
+<td>0000 0110         #先找正6</td>
+</tr>
+<tr>
+<td></td>
+<td>1111 1001   反码    #  取反</td>
+</tr>
+<tr>
+<td></td>
+<td>- 1111 -1010   补码</td>
+</tr>
+</tbody></table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span>（<span class="number">3</span>^<span class="number">5</span>）</span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">#步骤</span></span><br><span class="line"><span class="string">1。左边的数字转成二进制</span></span><br><span class="line"><span class="string">2.右侧的数字转成二进制</span></span><br><span class="line"><span class="string">3.对齐，上下进行比较 （相同的是0，不同的是1）</span></span><br><span class="line"><span class="string">4.将计算的结果转成十进制</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">3    0000 0011</span></span><br><span class="line"><span class="string">5    0000 0101</span></span><br><span class="line"><span class="string">---------------</span></span><br><span class="line"><span class="string">     0000 0110   -----&gt;6</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#左移：m&lt;&lt;n m*2的n次方 变大 （&gt;&gt;)</span></span><br><span class="line"><span class="comment">#右移m&gt;&gt;n m//2的n次方  （&lt;&lt;）</span></span><br><span class="line">print(<span class="number">2</span>&lt;&lt;<span class="number">1</span>) &lt;&lt;(移<span class="number">1</span>位)  <span class="comment">#4</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">2的二进制</span></span><br><span class="line"><span class="string">0000 0010</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">print(<span class="number">16</span>&gt;&gt;<span class="number">2</span>)   <span class="comment">#1  16/2的2次方=4 0000 0100 ---&gt; 0000 0010</span></span><br><span class="line"><span class="keyword">print</span>（<span class="number">16</span>&lt;&lt;<span class="number">2</span>) <span class="comment">#16移2位   后补两个0  16 &lt;&lt; 2 = 64  16 * 2的2次方  0000 00100---&gt;0001000000</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="进制"><a href="#进制" class="headerlink" title="进制"></a>进制</h2><h3 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h3><p>二进制由0和1组成</p>
+<p>二进制转换十进制</p>
+<table>
+<thead>
+<tr>
+<th>1010</th>
+<th>—&gt;</th>
+<th>十进制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1    ，  0    ， 1    ， 0</td>
+<td></td>
+<td>二进制</td>
+</tr>
+<tr>
+<td>2立方， 2平方，2一次方，2零次方</td>
+<td></td>
+<td>转换</td>
+</tr>
+<tr>
+<td>8        ，   4      ，   2 ，     1</td>
+<td></td>
+<td>十进制</td>
+</tr>
+<tr>
+<td>1 * 8 + 0  *  4 + 1  *  2 + 0  *  1  =  10</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span>b 二进制开头</span><br><span class="line">a=<span class="number">3</span></span><br><span class="line">print(bin(a))   <span class="comment"># 0b 11</span></span><br><span class="line">a =<span class="number">13</span></span><br><span class="line">print(bin(a))</span><br><span class="line">b = <span class="number">0b10111</span>  <span class="comment">#0b  二进制的表示： 0b1000101</span></span><br><span class="line"><span class="keyword">print</span>（int（b））</span><br><span class="line">c = <span class="number">-8</span></span><br><span class="line">print(bin(c))</span><br><span class="line">c = <span class="number">0o6430</span> <span class="comment"># 0o  开头的都是八进制</span></span><br><span class="line">print(int(c))</span><br><span class="line">d =<span class="number">0x9ab16</span>  <span class="comment">#0x   是十六进制</span></span><br><span class="line">print(int(d))</span><br><span class="line"><span class="number">0b11</span></span><br><span class="line"><span class="number">0b1101</span></span><br><span class="line"><span class="number">23</span></span><br><span class="line"><span class="number">-0</span>b1000</span><br><span class="line"><span class="number">3352</span></span><br><span class="line"><span class="number">633622</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>-5</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5： 1   0    1    末尾1是二进制位bit</td>
+</tr>
+<tr>
+<td>取反（反码）：  0   1   0</td>
+</tr>
+<tr>
+<td>加1 ：   011</td>
+</tr>
+<tr>
+<td>字节byte   8个二进制位bit构成1个字节byte</td>
+</tr>
+<tr>
+<td>1kb = 1024byte</td>
+</tr>
+<tr>
+<td>1M = 1024kb</td>
+</tr>
+<tr>
+<td>1G = 1024M</td>
+</tr>
+<tr>
+<td>1T = 1024G</td>
+</tr>
+</tbody></table>
+<h3 id="八进制"><a href="#八进制" class="headerlink" title="八进制"></a>八进制</h3><p>开头表示0o</p>
+<table>
+<thead>
+<tr>
+<th>二进制的负数</th>
+<th>八进制的运算</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>- 8</td>
+<td>n =0o6430</td>
+<td></td>
+<td>6         4      3    0</td>
+</tr>
+<tr>
+<td>步骤</td>
+<td>八进制转十进制</td>
+<td></td>
+<td>110   100  110   000</td>
+</tr>
+<tr>
+<td>1. 先求正8</td>
+<td>6   4    3    0</td>
+<td>—&gt;二进制</td>
+<td>110100110000</td>
+</tr>
+<tr>
+<td>0000 1000</td>
+<td>8的立方，八的平方 ….</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2. 取反（第一位是符号位，只要第一位是1就是负数，第一位是0就是整数）</td>
+<td>———————————-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1111  0111</td>
+<td>6  *  512+ 4 * 64 +3  *  8+0*1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3， 最后位数加1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1111  0111</td>
+<td>n =0o721</td>
+<td></td>
+<td>7         2       1</td>
+</tr>
+<tr>
+<td>1</td>
+<td></td>
+<td>—&gt;二进制</td>
+<td>111    010    001</td>
+</tr>
+<tr>
+<td>—————-</td>
+<td></td>
+<td></td>
+<td>111010001</td>
+</tr>
+<tr>
+<td>1111 1000</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="十六进制"><a href="#十六进制" class="headerlink" title="十六进制"></a>十六进制</h3><p>开头表示0x</p>
+<table>
+<thead>
+<tr>
+<th>n = 0*9</th>
+<th>转换为二进制————–&gt;</th>
+<th>9            a         b            1           6</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>9                         1                       1</td>
+<td></td>
+<td>1001     1010    1011   0001        0110</td>
+</tr>
+<tr>
+<td>16的平方            16的一次方       16的0次方</td>
+<td></td>
+<td>10011010101100010110</td>
+</tr>
+<tr>
+<td>9  *  256   + 1   *   16   + 1  *  1</td>
+<td></td>
+<td>==633622</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>0o52510   三个一位数字</th>
+<th>0xF0610C   四个一位数字</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>二进制 ：  5    2    5    1     0</td>
+<td>二进制：  F0610C</td>
+<td></td>
+</tr>
+<tr>
+<td>110   010   110   001   000</td>
+<td>1111    0000    0110  0001  0000   1100</td>
+<td></td>
+</tr>
+<tr>
+<td>5  * 512 +2 * 64  + 5  *8 +1 *1</td>
+<td>a     b       c      d     e      f</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>10   11    12     13   14   15</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>单词：</p>
+<ol start="3">
+<li>Bulit-in(bulitins): 内置</li>
+<li>Module：模块</li>
+<li>Value：值</li>
+<li>Stream：流</li>
+<li>Dafault：默认的</li>
+<li>format：式化</li>
+<li>digit: 数字</li>
+<li>required: 需要的</li>
+<li>raise：抛出，扔出。</li>
+<li>function 函数</li>
+<li>operator 运算符</li>
+<li>identity 身份</li>
+</ol>
+<h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1><!--more -->
+
+<h3 id="命令："><a href="#命令：" class="headerlink" title="命令："></a>命令：</h3><ol>
+<li>hexo clean</li>
+<li>hexo g         generator  生成器</li>
+<li>hexo s          start</li>
+<li>hexo d         deploy   部署 github</li>
+</ol>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -175,16 +717,65 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/06/python/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/06/python/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -204,8 +795,14 @@
 
 
 
+  
+  
+  
 
   
+
+  
+
   
 
 
@@ -228,8 +825,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
